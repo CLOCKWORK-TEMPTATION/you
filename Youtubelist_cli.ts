@@ -187,30 +187,6 @@ class MCPServerHandler {
     this.app = express();
     this.app.use(cors());
 
-    // Simple API key authentication
-    this.app.use((req, res, next) => {
-      const authHeader = req.headers.authorization;
-      const apiKey = req.headers['x-api-key'];
-      
-      // Skip auth for health checks or if no auth required
-      if (req.path === '/health' || process.env.RENDER === 'true' || process.env.VERCEL === '1') {
-        return next();
-      }
-      
-      // Check for API key in header
-      if (apiKey === process.env.MCP_API_KEY || 
-          authHeader === `Bearer ${process.env.MCP_API_KEY}`) {
-        return next();
-      }
-      
-      // For local development, allow without auth
-      if (!process.env.MCP_API_KEY) {
-        return next();
-      }
-      
-      res.status(401).json({ error: 'Authentication required' });
-    });
-
     // إعداد خادم MCP
     this.mcpServer = new Server(
       {
