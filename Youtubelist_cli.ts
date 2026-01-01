@@ -311,7 +311,7 @@ async function main() {
     .option('--format <format>', 'Output format (csv, json, txt)', 'csv')
     .option('--save-key', 'Save API key to config file')
     .option('--server', 'Run as MCP Server')
-    .option('--port <port>', 'Server port', '8000')
+    .option('--port <port>', 'Server port', '8080')
     .option('--verbose', 'Enable verbose logging');
 
   program.parse(process.argv);
@@ -383,4 +383,5 @@ async function main() {
 // تشغيل البرنامج
 main().catch((e) => {
   console.error("Fatal Error:", e);
+
 });
