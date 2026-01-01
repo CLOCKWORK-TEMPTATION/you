@@ -1,0 +1,29 @@
+{
+  "name": "youtube-playlist-extractor",
+  "version": "1.0.0",
+  "description": "YouTube Playlist Extractor with MCP Server",
+  "main": "dist/Youtubelist_cli.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/Youtubelist_cli.js --server --port $PORT",
+    "dev": "ts-node Youtubelist_cli.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.1",
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.3",
+    "commander": "^14.0.2",
+    "cors": "^2.8.5",
+    "csv-stringify": "^6.6.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "googleapis": "^169.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

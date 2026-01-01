@@ -1,0 +1,11 @@
+2026-01-01T22:39:45.973Z - ERROR - مطلوب مفتاح API. استخدم --key 'YOUR_KEY'
+2026-01-01T22:39:59.761Z - ERROR - مطلوب مفتاح API. استخدم --key 'YOUR_KEY'
+2026-01-01T22:40:12.760Z - INFO - جاري سحب البيانات للقائمة: PLOXw6I10VTv9zUbhqqaT62O9AFjlndmjn
+2026-01-01T22:40:13.088Z - ERROR - حدث خطأ: YouTube API Error: API key not valid. Please pass a valid API key.
+2026-01-01T22:42:30.697Z - ERROR - مطلوب مفتاح API. استخدم --key 'YOUR_KEY'
+2026-01-01T22:43:22.025Z - ERROR - مطلوب مفتاح API. استخدم --key 'YOUR_KEY'
+2026-01-01T22:45:28.020Z - INFO - جاري سحب البيانات للقائمة: PLOXw6I10VTv9zUbhqqaT62O9AFjlndmjn
+2026-01-01T22:45:28.513Z - INFO - تم الانتهاء! إجمالي الفيديوهات: 11
+2026-01-01T22:45:28.516Z - INFO - تم حفظ البيانات في الملف: playlist_PLOXw6I10VTv9zUbhqqaT62O9AFjlndmjn.csv
+2026-01-01T22:47:56.247Z - INFO - === MCP Server Running ===
+2026-01-01T22:47:56.248Z - INFO - Server URL for HuggingChat: http://localhost:8000/sse
