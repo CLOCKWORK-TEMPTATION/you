@@ -272,6 +272,11 @@ class MCPServerHandler {
   private setupRoutes(port: number) {
     let transport: SSEServerTransport;
 
+    // Health endpoint for Vercel
+    this.app.get('/health', (req, res) => {
+      res.status(200).json({ status: 'ok' });
+    });
+
     this.app.get('/sse', async (req: Request, res: Response) => {
       AppLogger.info("New SSE connection established");
       transport = new SSEServerTransport("/messages", res);
